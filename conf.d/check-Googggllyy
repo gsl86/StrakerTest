@@ -1,0 +1,5 @@
+#Check website for presence of Googgglly string
+check host Googgglly with address www.strakertranslations.com
+	IF FAILED URL https://www.strakertranslations.com/ 
+	AND content == "Googgglly"
+	then alert 

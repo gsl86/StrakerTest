@@ -1,0 +1,3 @@
+check program specip with path "/etc/monit/sbin/check-port.sh 169.44.180.120 2393" with timeout 6 seconds
+	if status != 0 
+	then EXEC "/bin/bash -c /etc/monit/sbin/send-slack.sh"

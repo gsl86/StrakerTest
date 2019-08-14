@@ -1,0 +1,5 @@
+#Check website for presence of Straker string
+check host Straker with address www.strakertranslations.com
+        IF FAILED URL https://www.strakertranslations.com/
+        AND content == "Straker"
+        then alert
